@@ -1,0 +1,156 @@
+=====NSGAIII=====
+Time: 6604
+Pay-off: 0.2280
+Owner Profit: 25745776
+Sum Contractors Profit: 696310996
+Balance Contractors Profit: 3985457904
+Project Quality: 8.43
+Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           2/2/2017
+Package 1: IDC - Công Ty Cổ Phần Thương Mại IDC
+           18/4/2017
+Package 2: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           17/6/2017
+Package 3: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           10/5/2017
+Package 4: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           19/2/2017
+Package 5: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           30/1/2017
+Package 6: Công Ty Cổ Phần Tin H�?c Hồng Phúc
+           21/7/2017
+Package 7: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           3/9/2017
+Package 8: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           10/11/2017
+
+=====eMOEA=====
+Time: 8951
+Pay-off: 0.2349
+Owner Profit: 14049154
+Sum Contractors Profit: 782174342
+Balance Contractors Profit: 2816106407
+Project Quality: 8.00
+Package 0: Công Ty Cổ Phần Nguyễn Quân
+           7/2/2017
+Package 1: Công Ty Cổ Phần Nguyễn Quân
+           5/5/2017
+Package 2: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           9/4/2017
+Package 3: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           30/5/2017
+Package 4: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           22/3/2017
+Package 5: Công Ty Cổ Phần Tin H�?c Hồng Phúc
+           20/1/2017
+Package 6: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           25/7/2017
+Package 7: Công Ty Cổ Phần Nguyễn Quân
+           27/5/2017
+Package 8: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           19/10/2017
+
+=====GDE3=====
+Time: 7998
+Pay-off: 0.2144
+Owner Profit: 14050265
+Sum Contractors Profit: 783682191
+Balance Contractors Profit: 2826651080
+Project Quality: 8.51
+Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           15/2/2017
+Package 1: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           17/4/2017
+Package 2: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           23/4/2017
+Package 3: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           16/5/2017
+Package 4: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           25/3/2017
+Package 5: Công Ty Cổ Phần Tin H�?c Hồng Phúc
+           1/2/2017
+Package 6: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           6/8/2017
+Package 7: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           21/9/2017
+Package 8: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           23/9/2017
+
+=====PESA2=====
+Time: 6119
+Pay-off: 0.2253
+Owner Profit: 2863052
+Sum Contractors Profit: 601687131
+Balance Contractors Profit: 2666449516
+Project Quality: 8.26
+Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           16/2/2017
+Package 1: Công Ty Cổ Phần Tin H�?c Hồng Phúc
+           13/4/2017
+Package 2: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           15/6/2017
+Package 3: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           20/5/2017
+Package 4: Công Ty Cổ Phần Nguyễn Quân
+           11/2/2017
+Package 5: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           21/1/2017
+Package 6: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           13/7/2017
+Package 7: IDC - Công Ty Cổ Phần Thương Mại IDC
+           12/5/2017
+Package 8: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           27/10/2017
+
+=====IBEA=====
+Time: 7099
+Pay-off: 0.2077
+Owner Profit: 4062791
+Sum Contractors Profit: 1225741836
+Balance Contractors Profit: 4418388519
+Project Quality: 8.51
+Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           20/2/2017
+Package 1: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           16/5/2017
+Package 2: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           22/4/2017
+Package 3: Công Ty Cổ Phần Tin H�?c Hồng Phúc
+           4/6/2017
+Package 4: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           14/2/2017
+Package 5: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           1/2/2017
+Package 6: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           6/8/2017
+Package 7: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           9/12/2017
+Package 8: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           14/11/2017
+
+=====SMPSO=====
+Time: 6424
+Pay-off: 0.2077
+Owner Profit: 4085610
+Sum Contractors Profit: 1223375457
+Balance Contractors Profit: 4409408738
+Project Quality: 8.51
+Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           30/1/2017
+Package 1: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           1/5/2017
+Package 2: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           12/5/2017
+Package 3: Công Ty Cổ Phần Tin H�?c Hồng Phúc
+           19/5/2017
+Package 4: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           3/3/2017
+Package 5: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           27/1/2017
+Package 6: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           10/7/2017
+Package 7: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           31/8/2017
+Package 8: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           21/10/2017
+

@@ -1,0 +1,6 @@
+2019/02/18
+- Cai dat eclipse, java, moea laptop
+- Run test program of moea
+- Thiet ke object tuong ung du lieu nhan duoc 
+- xac dinh cac ham muc tieu
+- xac dinh so luong bien

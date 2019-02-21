@@ -2,6 +2,8 @@ import org.json.JSONObject;
 import org.moeaframework.Executor;
 import org.moeaframework.core.NondominatedPopulation;
 import org.moeaframework.core.Solution;
+import org.moeaframework.Analyzer;
+import org.moeaframework.analysis.plot.Plot;
 import problem.Evaluator;
 import problem.MultiRoundBidProblem;
 import problem.MultiRoundBidObjectives;
@@ -47,6 +49,7 @@ public class Main {
                 MultiRoundBidProblem.IGNORE_CONSTRAINTS = algorithm.equals("IBEA");
                 long start_time = System.currentTimeMillis();
                 for (int i = 0; i < LOOPS; ++i) {
+                	
                     NondominatedPopulation population = new Executor()
                             .withAlgorithm(algorithm)
                             .withProblemClass(MultiRoundBidProblem.class)

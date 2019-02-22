@@ -10,13 +10,18 @@ import java.util.Objects;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.moeaframework.Executor;
+import org.moeaframework.core.NondominatedPopulation;
+import org.moeaframework.core.Solution;
+import org.moeaframework.core.variable.EncodingUtils;
+
+import util.DateUtil;
 
 public class test {
 	static String DATA_FOLDER = "DTA_BID/data";
-	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-
+		JSONObject jObj = new JSONObject();
 		 File dir = new File(DATA_FOLDER);
 		 System.out.println(dir.getAbsolutePath());
 		 for (String filename : Objects.requireNonNull(dir.list())) {
@@ -29,15 +34,26 @@ public class test {
 	             sb.append(line);
 	             line = br.readLine();
 	         }
-	         JSONObject jObj = new JSONObject(sb.toString());
-	         ProjectBID myProject = new ProjectBID(jObj);
-	         ArrayList<Product> myProduct = myProject.getProducts();
-	         for (Product product : myProduct) {
-				System.out.println(product.Description());
-			}
-		 }
-		 
-		 
+	         jObj = new JSONObject(sb.toString());
+	     }		 
+        ProjectBID projectBID = new ProjectBID(jObj);
+        General.pubProjectBID = projectBID;
+        BIDProblems curBID = new BIDProblems();
+        
+//        Package currentPackage = General.pubProjectBID.Packages().get(0);
+//		Contractor currentContractor = currentPackage.getContractorByID(1);
+//		String currentTime = DateUtil.add(currentPackage.from(), 5);
+//        
+//        double cost = curBID.realSellCostForContractor(currentPackage, currentContractor, currentTime);
+//        
+//        System.out.println(cost);
+        
+        NondominatedPopulation result = new Executor()
+        		.withProblemClass(BIDProblems.class)
+        		.withAlgorithm("GDE3")
+        		.withMaxEvaluations(10000)
+        		.run();
+
 	}
 
 }

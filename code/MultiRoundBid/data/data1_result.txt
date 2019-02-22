@@ -1,94 +1,94 @@
 =====NSGAIII=====
-Time: 4019
-Pay-off: 0.3427
-Owner Profit: 1999069
-Sum Contractors Profit: 10315975
-Balance Contractors Profit: 5113207
-Project Quality: 5.02
-Package 0: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
-           19/2/2017
-Package 1: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
-           8/5/2017
-Package 2: Công Ty Cổ Phần Nguyễn Quân
-           13/5/2017
-Package 3: Công Ty Cổ Phần Nguyễn Quân
-           25/5/2017
-Package 4: Công Ty Cổ Phần Nguyễn Quân
-           23/3/2017
-Package 5: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
-           27/1/2017
-
-=====eMOEA=====
-Time: 4721
-Pay-off: 0.3076
-Owner Profit: 2021522
-Sum Contractors Profit: 9533483
-Balance Contractors Profit: 2111629
-Project Quality: 4.79
-Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
-           20/1/2017
-Package 1: Công Ty Cổ Phần Nguyễn Quân
-           27/4/2017
-Package 2: Công Ty Cổ Phần Nguyễn Quân
-           26/4/2017
-Package 3: Công Ty Cổ Phần Nguyễn Quân
-           11/5/2017
-Package 4: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
-           16/3/2017
-Package 5: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
-           30/1/2017
-
-=====GDE3=====
-Time: 4629
-Pay-off: 0.3305
-Owner Profit: 2013196
-Sum Contractors Profit: 10188912
-Balance Contractors Profit: 5614815
-Project Quality: 4.96
+Time: 3765
+Pay-off: 0.3174
+Owner Profit: 2012148
+Sum Contractors Profit: 9960738
+Balance Contractors Profit: 2732559
+Project Quality: 4.73
 Package 0: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
            7/1/2017
-Package 1: Công Ty Cổ Phần Nguyễn Quân
-           27/4/2017
-Package 2: Công Ty Cổ Phần Nguyễn Quân
-           23/4/2017
-Package 3: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
-           11/5/2017
-Package 4: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
-           22/3/2017
-Package 5: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
-           26/1/2017
-
-=====PESA2=====
-Time: 3017
-Pay-off: 0.3078
-Owner Profit: 2021754
-Sum Contractors Profit: 9512877
-Balance Contractors Profit: 2111520
-Project Quality: 4.79
-Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
-           17/1/2017
-Package 1: Công Ty Cổ Phần Nguyễn Quân
-           30/4/2017
+Package 1: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           9/5/2017
 Package 2: Công Ty Cổ Phần Nguyễn Quân
            10/5/2017
 Package 3: Công Ty Cổ Phần Nguyễn Quân
-           2/6/2017
+           24/5/2017
 Package 4: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
-           22/3/2017
+           13/2/2017
 Package 5: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
            29/1/2017
 
-=====IBEA=====
-Time: 3625
-Pay-off: 0.3072
-Owner Profit: 2021611
-Sum Contractors Profit: 9527897
-Balance Contractors Profit: 2071551
+=====eMOEA=====
+Time: 4476
+Pay-off: 0.3026
+Owner Profit: 2021576
+Sum Contractors Profit: 9529815
+Balance Contractors Profit: 2110743
 Project Quality: 4.79
 Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
-           14/1/2017
+           27/1/2017
 Package 1: Công Ty Cổ Phần Nguyễn Quân
            30/4/2017
+Package 2: Công Ty Cổ Phần Nguyễn Quân
+           8/5/2017
+Package 3: Công Ty Cổ Phần Nguyễn Quân
+           14/5/2017
+Package 4: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           3/3/2017
+Package 5: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           24/1/2017
+
+=====GDE3=====
+Time: 4571
+Pay-off: 0.3291
+Owner Profit: 2012332
+Sum Contractors Profit: 9997753
+Balance Contractors Profit: 6384327
+Project Quality: 5.13
+Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           1/2/2017
+Package 1: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           4/5/2017
+Package 2: Công Ty Cổ Phần Nguyễn Quân
+           20/4/2017
+Package 3: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           16/5/2017
+Package 4: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           6/2/2017
+Package 5: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           31/1/2017
+
+=====PESA2=====
+Time: 3050
+Pay-off: 0.3081
+Owner Profit: 2018540
+Sum Contractors Profit: 9732686
+Balance Contractors Profit: 1289172
+Project Quality: 4.56
+Package 0: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           15/1/2017
+Package 1: Công Ty Cổ Phần Nguyễn Quân
+           15/4/2017
+Package 2: Công Ty Cổ Phần Nguyễn Quân
+           14/5/2017
+Package 3: Công Ty Cổ Phần Nguyễn Quân
+           25/5/2017
+Package 4: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           24/2/2017
+Package 5: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           31/1/2017
+
+=====IBEA=====
+Time: 3726
+Pay-off: 0.3022
+Owner Profit: 2021611
+Sum Contractors Profit: 9527897
+Balance Contractors Profit: 2071596
+Project Quality: 4.79
+Package 0: Artek - Công Ty Cổ Phần Công Nghệ Máy Tính Và Kiến Trúc Hà Nội
+           15/1/2017
+Package 1: Công Ty Cổ Phần Nguyễn Quân
+           29/4/2017
 Package 2: Công Ty Cổ Phần Nguyễn Quân
            14/5/2017
 Package 3: Công Ty Cổ Phần Nguyễn Quân
@@ -99,29 +99,29 @@ Package 5: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
            30/1/2017
 
 =====SMPSO=====
-Time: 3559
-Pay-off: 0.3250
-Owner Profit: 2010902
-Sum Contractors Profit: 9154012
-Balance Contractors Profit: 421641
+Time: 3567
+Pay-off: 0.3220
+Owner Profit: 2015455
+Sum Contractors Profit: 8765626
+Balance Contractors Profit: 412933
 Project Quality: 4.68
-Package 0: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+Package 0: Công Ty Cổ Phần Nguyễn Quân
            7/2/2017
 Package 1: Công Ty Cổ Phần Nguyễn Quân
-           26/4/2017
+           5/5/2017
 Package 2: Công Ty Cổ Phần Nguyễn Quân
-           14/5/2017
+           2/5/2017
 Package 3: Công Ty Cổ Phần Nguyễn Quân
-           20/5/2017
-Package 4: Công Ty Cổ Phần Nguyễn Quân
-           27/2/2017
+           22/5/2017
+Package 4: Công Ty TNHH Công Nghệ Thông Tin Việt Nam
+           8/3/2017
 Package 5: Công Ty Cổ Phần Nguyễn Quân
-           23/1/2017
+           27/1/2017
 
 Comparison
-NSGAIII | 0.342715 | 4019
-  eMOEA | 0.307649 | 4721
-   GDE3 | 0.330474 | 4629
-  PESA2 | 0.307772 | 3017
-   IBEA | 0.307233 | 3625
-  SMPSO | 0.324953 | 3559
+NSGAIII | 0.317436 | 3765
+  eMOEA | 0.302644 | 4476
+   GDE3 | 0.329100 | 4571
+  PESA2 | 0.308112 | 3050
+   IBEA | 0.302237 | 3726
+  SMPSO | 0.321953 | 3567

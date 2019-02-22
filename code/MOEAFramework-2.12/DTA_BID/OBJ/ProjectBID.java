@@ -46,11 +46,11 @@ public class ProjectBID {
 		_packages = jarr2ArrPackage(jObj.getJSONArray("packages"));
 		
 	}
-	public int getID(){return _ID;}
-	public double getInflationRate(){return _inflationRate;}
-	public String getStartDate(){return _startDate;}
-	public ArrayList<Package> getPackages(){return _packages;}
-	public ArrayList<Contractor> getContractors() {return _contractors;}
-	public ArrayList<Product> getProducts() {return _products;}
+	public int ID(){return _ID;}
+	public double InflationRate(){return _inflationRate;}
+	public String StartDate(){return _startDate;}
+	public ArrayList<Package> Packages(){return _packages;}
+	public ArrayList<Contractor> Contractors() {return _contractors;}
+	public ArrayList<Product> Products() {return _products;}
 	
 }

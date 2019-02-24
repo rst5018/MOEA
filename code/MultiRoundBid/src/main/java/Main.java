@@ -16,6 +16,7 @@ import java.util.Objects;
 public class Main {
     static String[] ALGORITHMS = {"NSGAIII", "eMOEA", "GDE3", "PESA2", "IBEA", "SMPSO"};
     static String DATA_FOLDER = "data";
+     
     static int LOOPS = 1;
 
     public static void main(String[] args) throws IOException {
@@ -70,7 +71,6 @@ public class Main {
                 }
 
                 formatter.format("%7s | %4f | %d\n", algorithm, Evaluator.payOff(bestSolution), time);
-
                 bw.write("=====" + algorithm + "=====\n");
                 bw.write("Time: " + time + "\n");
                 bw.write(new MultiRoundBidObjectives(bestSolution).toString());

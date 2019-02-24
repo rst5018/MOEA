@@ -8,9 +8,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import org.jfree.chart.plot.PieLabelDistributor;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.moeaframework.Analyzer;
 import org.moeaframework.Executor;
+import org.moeaframework.analysis.plot.Plot;
 import org.moeaframework.core.NondominatedPopulation;
 import org.moeaframework.core.Solution;
 import org.moeaframework.core.variable.EncodingUtils;
@@ -25,7 +28,9 @@ public class test {
 		 File dir = new File(DATA_FOLDER);
 		 System.out.println(dir.getAbsolutePath());
 		 for (String filename : Objects.requireNonNull(dir.list())) {
-			 System.out.println(filename);
+			 if (!filename.endsWith(".json")) {
+	                continue;
+	            }
 			 BufferedReader br = new BufferedReader(new FileReader(DATA_FOLDER + "/" + filename));
 	         StringBuilder sb = new StringBuilder();
 	         String line = br.readLine();
@@ -37,22 +42,28 @@ public class test {
 	         jObj = new JSONObject(sb.toString());
 	     }		 
         ProjectBID projectBID = new ProjectBID(jObj);
-        General.pubProjectBID = projectBID;
-        BIDProblems curBID = new BIDProblems();
-        
-//        Package currentPackage = General.pubProjectBID.Packages().get(0);
-//		Contractor currentContractor = currentPackage.getContractorByID(1);
-//		String currentTime = DateUtil.add(currentPackage.from(), 5);
-//        
-//        double cost = curBID.realSellCostForContractor(currentPackage, currentContractor, currentTime);
-//        
-//        System.out.println(cost);
-        
+
         NondominatedPopulation result = new Executor()
-        		.withProblemClass(BIDProblems.class)
+        		.withProblemClass(BIDProblem.class, projectBID, 1)
         		.withAlgorithm("GDE3")
         		.withMaxEvaluations(10000)
         		.run();
+        new Plot()
+        .add("GDE3",result)
+        .show();
+        
+      for (int i = 0; i < result.size(); i++) {
+    	System.out.println(result.get(i).getObjective(0));
+	}
+        Analyzer analyzer = new Analyzer();
+        analyzer.add("GDE3", result);
+//        analyzer.addAll("GDE3", executor.withAlgorithm("GDE3").runSeeds(2));
+        analyzer.printAnalysis();
+//        new Plot()
+//        .add(analyzer)
+//        .show();
+//        
+        
 
 	}
 

@@ -71,10 +71,13 @@ public class Package {
 	public ArrayList<ProductOfPackage> Products() {return _products;}
 	public double estimatedCost() {return _estimatedCost;}
 	
-	public Contractor getContractorByID(int contractorID) {
-		for (Contractor contractor : _joinedContractors) {
+	public Contractor getContractorByIndex(int indexJoinedContractor) {
+		return _joinedContractors.get(indexJoinedContractor);
+	}
+	
+	public Contractor getContractorByID (int contractorID) {
+		for (Contractor contractor : _joinedContractors) 
 			if(contractor.ID() == contractorID) return contractor;
-		}
 		return null;
 	}
 }

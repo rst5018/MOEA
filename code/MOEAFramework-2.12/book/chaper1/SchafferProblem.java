@@ -16,6 +16,7 @@ public class SchafferProblem extends AbstractProblem{
 
 		solution.setObjective(0, Math.pow(x, 2.0));
 		solution.setObjective(1, Math.pow(x - 2.0, 2.0));
+		
 	}
 
 	@Override

@@ -81,7 +81,7 @@ public class BIDProblem extends AbstractProblem {
 			String currentTime = DateUtil.add(currentPackage.from(), y[i]);
 			double inflationValue = Math.exp(_projectBID.InflationRate() * DateUtil.diff(currentTime, _projectBID.StartDate()) / 365.0);
 			double realBuyCost = realBuyCostForContractor(currentPackage, currentContractor, currentTime);
-			double realSellCost = realBuyCostForContractor(currentPackage, currentContractor, currentTime);
+			double realSellCost = realSellCostForContractor(currentPackage, currentContractor, currentTime);
 			double realContractorProfit = (realSellCost - realBuyCost) * inflationValue;
 			result += realContractorProfit;
 		}		
@@ -103,7 +103,7 @@ public class BIDProblem extends AbstractProblem {
 				String currentTime = DateUtil.add(currentPackage.from(), y[i]);
 				double inflationValue = Math.exp(_projectBID.InflationRate() * DateUtil.diff(currentTime, _projectBID.StartDate()) / 365.0);
 				double realBuyCost = realBuyCostForContractor(currentPackage, currentContractor, currentTime);
-				double realSellCost = realBuyCostForContractor(currentPackage, currentContractor, currentTime);
+				double realSellCost = realSellCostForContractor(currentPackage, currentContractor, currentTime);
 				double realContractorProfit = (realSellCost - realBuyCost) * inflationValue;
 				result += realContractorProfit;
 			}

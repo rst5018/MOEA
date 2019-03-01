@@ -43,26 +43,17 @@ public class test {
 	     }		 
         ProjectBID projectBID = new ProjectBID(jObj);
 
-        NondominatedPopulation result = new Executor()
-        		.withProblemClass(BIDProblem.class, projectBID, 1)
-        		.withAlgorithm("GDE3")
-        		.withMaxEvaluations(10000)
-        		.run();
-        new Plot()
-        .add("GDE3",result)
-        .show();
-        
-      for (int i = 0; i < result.size(); i++) {
-    	System.out.println(result.get(i).getObjective(0));
-	}
-        Analyzer analyzer = new Analyzer();
-        analyzer.add("GDE3", result);
-//        analyzer.addAll("GDE3", executor.withAlgorithm("GDE3").runSeeds(2));
+        Executor executor = new Executor()
+        		.withProblemClass(BIDProblem.class, projectBID, 4)
+        		.withMaxEvaluations(10000);
+       
+        Analyzer analyzer = new Analyzer()
+        		.withSameProblemAs(executor)
+        		.includeHypervolume()
+        		.showStatisticalSignificance();
+        analyzer.addAll("NSGAIII", executor.withAlgorithm("NSGAIII").runSeeds(10));
         analyzer.printAnalysis();
-//        new Plot()
-//        .add(analyzer)
-//        .show();
-//        
+        new Plot().add(analyzer).show();         
         
 
 	}

@@ -51,8 +51,9 @@ public class test {
         		.withSameProblemAs(executor)
         		.includeHypervolume()
         		.showStatisticalSignificance();
-        analyzer.addAll("NSGAIII", executor.withAlgorithm("NSGAIII").runSeeds(10));
+        analyzer.addAll("NSGAIII", executor.withAlgorithm("NSGAIII").runSeeds(1));
         analyzer.printAnalysis();
+        analyzer.getAnalysis().print();
         new Plot().add(analyzer).show();         
         
 

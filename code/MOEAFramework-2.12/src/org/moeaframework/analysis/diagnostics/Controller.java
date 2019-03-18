@@ -534,7 +534,7 @@ public class Controller {
 			
 			ByteArrayOutputStream stream = new ByteArrayOutputStream();
 			analyzer.printAnalysis(new PrintStream(stream));
-			
+			System.out.println(analyzer.printAnalysis());
 			StatisticalResultsViewer viewer = new StatisticalResultsViewer(
 					this, stream.toString());
 			viewer.setLocationRelativeTo(frame);
@@ -671,6 +671,7 @@ public class Controller {
 					};
 					
 					// setup the executor to run for the desired time
+					long startTime = System.currentTimeMillis();
 					executor = new Executor()
 							.withSameProblemAs(instrumenter)
 							.withInstrumenter(instrumenter)
@@ -680,6 +681,9 @@ public class Controller {
 					
 					// run the executor using the listener to collect results
 					executor.runSeeds(numberOfSeeds);
+					long longTime = System.currentTimeMillis();
+					System.out.printf("%s : Number of seeds: %d, Run time: %d \r\n",algorithmName, numberOfSeeds, (longTime - startTime));
+					
 				} catch (Exception e) {
 					handleException(e);
 				} finally {

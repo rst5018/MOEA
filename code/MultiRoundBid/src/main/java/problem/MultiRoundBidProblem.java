@@ -87,24 +87,24 @@ public class MultiRoundBidProblem extends AbstractProblem {
             packages.add(new Package(packageObject, joinedContractors, packageProducts));
         }
 
-        for (String item : OBJECTIVES) {
-            for (String type : new String[] {"MIN", "MAX"}) {
-                objective = item;
-                optimize = type;
-                Solution solution = new Executor()
-                        .withAlgorithm("eMOEA")
-                        .withProblemClass(MultiRoundBidProblem.class)
-                        .withMaxEvaluations(10000)
-                        .run()
-                        .get(0);
-                for (int i = 0; i < NUMBER_OF_OBJECTIVES; ++i) {
-                    Evaluator.PROPERTIES.put(optimize + "_" + objective, Math.abs(solution.getObjective(i)));
-                    if (solution.getObjective(i) != 0) {
-                        break;
-                    }
-                }
-            }
-        }
+//        for (String item : OBJECTIVES) {
+//            for (String type : new String[] {"MIN", "MAX"}) {
+//                objective = item;
+//                optimize = type;
+//                Solution solution = new Executor()
+//                        .withAlgorithm("eMOEA")
+//                        .withProblemClass(MultiRoundBidProblem.class)
+//                        .withMaxEvaluations(10000)
+//                        .run()
+//                        .get(0);
+//                for (int i = 0; i < NUMBER_OF_OBJECTIVES; ++i) {
+//                    Evaluator.PROPERTIES.put(optimize + "_" + objective, Math.abs(solution.getObjective(i)));
+//                    if (solution.getObjective(i) != 0) {
+//                        break;
+//                    }
+//                }
+//            }
+//        }
 
         objective = null;
     }
@@ -129,22 +129,26 @@ public class MultiRoundBidProblem extends AbstractProblem {
     public void evaluate(Solution solution) {
         MultiRoundBidObjectives multiRoundBidObjectives = new MultiRoundBidObjectives(solution);
         double[] objectives = {0, 0, 0, 0};
-        objectives[0] = (objective == null) ? - multiRoundBidObjectives.getOwnerProfit() :
-                        !objective.equals(OBJECTIVES[0]) ? 0 :
-                        optimize.equals("MIN") ? multiRoundBidObjectives.getOwnerProfit() :
-                                - multiRoundBidObjectives.getOwnerProfit();
-        objectives[1] = (objective == null) ? - multiRoundBidObjectives.getSumContractorsProfit() :
-                !objective.equals(OBJECTIVES[1]) ? 0 :
-                        optimize.equals("MIN") ? multiRoundBidObjectives.getSumContractorsProfit() :
-                                - multiRoundBidObjectives.getSumContractorsProfit();
-        objectives[2] = (objective == null) ? multiRoundBidObjectives.getBalanceContractorsProfit() :
-                !objective.equals(OBJECTIVES[2]) ? 0 :
-                        optimize.equals("MIN") ? multiRoundBidObjectives.getBalanceContractorsProfit() :
-                                - multiRoundBidObjectives.getBalanceContractorsProfit();
-        objectives[3] = (objective == null) ? - multiRoundBidObjectives.getProjectQuality() :
-                !objective.equals(OBJECTIVES[3]) ? 0 :
-                        optimize.equals("MIN") ? multiRoundBidObjectives.getProjectQuality() :
-                                - multiRoundBidObjectives.getProjectQuality();
+        objectives[0] = - multiRoundBidObjectives.getOwnerProfit();
+        objectives[1] = - multiRoundBidObjectives.getSumContractorsProfit();
+        objectives[2] = multiRoundBidObjectives.getBalanceContractorsProfit();
+        objectives[3] = - multiRoundBidObjectives.getProjectQuality();
+//        objectives[0] = (objective == null) ? - multiRoundBidObjectives.getOwnerProfit() :
+//                        !objective.equals(OBJECTIVES[0]) ? 0 :
+//                        optimize.equals("MIN") ? multiRoundBidObjectives.getOwnerProfit() :
+//                                - multiRoundBidObjectives.getOwnerProfit();
+//        objectives[1] = (objective == null) ? - multiRoundBidObjectives.getSumContractorsProfit() :
+//                !objective.equals(OBJECTIVES[1]) ? 0 :
+//                        optimize.equals("MIN") ? multiRoundBidObjectives.getSumContractorsProfit() :
+//                                - multiRoundBidObjectives.getSumContractorsProfit();
+//        objectives[2] = (objective == null) ? multiRoundBidObjectives.getBalanceContractorsProfit() :
+//                !objective.equals(OBJECTIVES[2]) ? 0 :
+//                        optimize.equals("MIN") ? multiRoundBidObjectives.getBalanceContractorsProfit() :
+//                                - multiRoundBidObjectives.getBalanceContractorsProfit();
+//        objectives[3] = (objective == null) ? - multiRoundBidObjectives.getProjectQuality() :
+//                !objective.equals(OBJECTIVES[3]) ? 0 :
+//                        optimize.equals("MIN") ? multiRoundBidObjectives.getProjectQuality() :
+//                                - multiRoundBidObjectives.getProjectQuality();
 
         solution.setObjectives(objectives);
         if (objective == null && solution.getNumberOfConstraints() > 0) {

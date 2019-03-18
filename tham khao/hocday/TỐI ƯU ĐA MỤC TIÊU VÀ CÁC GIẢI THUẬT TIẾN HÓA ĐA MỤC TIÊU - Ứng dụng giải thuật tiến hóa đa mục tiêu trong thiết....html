@@ -1,0 +1,424 @@
+
+<!-- saved from url=(0092)http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết...</title>
+<!--<base href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng/">--><base href="."><meta name="description" content="Monte Carlo. Một số giải thuật tiến hóa đa mục tiêu khác nhau như nsga, nsgaii, nsgaiic và spea đã được hiện thực và thử nghiệm để so sánh và đánh giá hiệu quả"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/f.txt" as="script"><script src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/osd.js.tải xuống"></script><script src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/ca-pub-9447527079377332.js.tải xuống"></script><script type="text/javascript" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/f.txt"></script><link rel="preload" href="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/f(1).txt" as="script"><script type="text/javascript" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/f(1).txt"></script><link rel="preload" href="http://pagead2.googlesyndication.com/pagead/js/r20190304/r20190131/show_ads_impl.js" as="script"><script async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/kb.js.tải xuống" type="text/javascript"></script><script async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/adcm.js.tải xuống" type="text/javascript"></script><script async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/s.js.tải xuống" type="text/javascript"></script><script src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/processor.js.tải xuống"></script><script src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/extension_1086.js.tải xuống"></script></head>
+<body><script async="" src="http://front.facetz.net/collect_pluso.js"></script>
+<style>
+
+h1{ font-size:20px;margin:0px;}
+.cata{font-size:18px;}
+.catb{color:#00F;margin-left:16px;font-size:14px;}
+
+img{
+	max-width:600px;
+}
+body{
+background: #e4f5fc; /* Old browsers */
+background: -moz-linear-gradient(top,  #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f5fc), color-stop(50%,#bfe8f9), color-stop(51%,#9fd8ef), color-stop(100%,#2ab0ed)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-9 */
+}
+.td9{padding:15px;border:1px solid #000;}
+.tabl1{overflow:hidden;border-collapse:collapse;table-layout: fixed; width: 100%;font-size:16px;}
+.tabl2{border:1px solid #000;margin:5px;padding:5px;width:90%;}
+.tabl3{border-collapse:collapse;table-layout:fixed;border:#030 1px solid;}
+
+.ap{position: absolute;width: 32px;height: 32px;margin-top:0px;background: url(/i/share.png) no-repeat;overflow: hidden;}
+.g2{margin-left:32px;background-position:-32px 0px;}
+.ya{margin-left:64px;background-position:-64px 0px;}
+.ma{margin-left:96px;background-position:-96px 0px;}
+.vk{margin-left:128px;background-position:-128px 0px;}
+.od{margin-left:160px;background-position:-160px 0px;}
+.fb{margin-left:192px;background-position:-192px 0px;}
+.tw{margin-left:224px;background-position:-224px 0px;}
+.udal:hover{opacity: 1;cursor:pointer;}
+.udal{opacity: 0.8;background: url(/i/udal.png) no-repeat;overflow: hidden;}
+.kick{position: absolute;width: 14px;height: 14px;margin-top: 4px;background-position:-75px 0px;}
+.mt2{overflow:hidden;border-collapse:collapse;table-layout:fixed;}
+
+.smal{font-size:12px;color:#333;}
+.smal2{font-size:11px;color:#132;}
+.wnt{font-size:14px;color:#334;padding-left:10px;margin-top:7px;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.tbs{ font-size:14px; margin:9px 0px 0px 15px;}
+.tbs tr{height:24px; vertical-align:top;}
+.list5{border:1px solid #00C; margin:10px;padding:5px;width:97%;}
+.list5 td{padding-bottom:16px;padding-top:2px;}
+.td8{border-bottom:1px solid #000;}
+.h2cl{ font-size:19px;color:#333;}
+.knopka{width:160px;padding:5px;margin:0px 0px 5px 20px; text-align:center;}
+.but3{width:160px;padding:5px;margin:0px 0px 5px -5px; text-align:center;}
+</style>
+
+<table cellpadding="5px" border="0" width="100%">
+<colgroup><col width="100px"><col style="background-color:#FFFFFF;"><col width="240px">
+	</colgroup><tbody><tr valign="top">
+		<td><div style="left:0px;	top:0px;"></div></td>
+		<td class="td9"><div><h1><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html">Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết kế tối ưu kiến trúc mạng viễn thông</a></h1><div class="wnt"></div><table cellpadding="5px" border="0" width="100%"><colgroup><col width="320px"></colgroup><tbody><tr><td><script async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/f(2).txt"></script>
+<!-- adaptiv -->
+<ins class="adsbygoogle" style="display: block; height: 250px;" data-ad-client="ca-pub-9447527079377332" data-ad-slot="1928647400" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:310px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:310px;background-color:transparent;"><iframe width="310" height="250" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0px;width:310px;height:250px;" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/saved_resource(1).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></td><td>
+<script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();</script>
+<div class="pluso" data-background="none;" data-options="big,square,line,horizontal,counter,sepcounter=1,theme=14" data-services="vkontakte,odnoklassniki,facebook,moimir,twitter,google,print"><div class="pluso-110010101001-14"><span class="pluso-wrap" style="background:none;"><div style="background: rgb(65, 101, 139);"><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12" title="ВКонтакте" class="pluso-vkontakte"></a><b title="0">0</b></div><div style="background: rgb(244, 150, 15);"><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12" title="Одноклассники" class="pluso-odnoklassniki"></a><b title="0">0</b></div><div style="background: rgb(57, 87, 154);"><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12" title="Facebook" class="pluso-facebook"></a><b title="0">0</b></div><div style="background: rgb(47, 105, 161);"><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12" title="Мой Мир@Mail.Ru" class="pluso-moimir"></a><b title="0">0</b></div><div style="background: rgb(0, 171, 240);"><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12" title="Twitter" class="pluso-twitter"></a><b title="0">0</b></div><div style="background: rgb(190, 51, 8);"><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12" title="Google+" class="pluso-google"></a><b title="0">0</b></div><div style="background: rgb(15, 174, 150);"><a href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=12" title="Печатать" class="pluso-print"></a><b title="0">0</b></div><a href="http://pluso.ru/" class="pluso-more"></a></span><span class="pluso-counter"><b title="0">0</b></span></div></div><br><form action="http://hocday.com/"><input style="width:300px;" name="q" value=""><input type="submit" value="Tìm một cái gì đó tương tự"></form><br><div class="but3 rad"><a rel="nofollow" href="http://hocday.com/download/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.doc">tải về</a> 0.98 Mb.</div><table class="tbs"><colgroup><col width="130px"></colgroup><tbody><tr><td>trang</td><td>12/13</td></tr><tr><td>Chuyển đổi dữ liệu</td><td>03.11.2017</td></tr><tr><td>Kích</td><td>0.98 Mb.</td></tr></tbody></table></td></tr></tbody></table><div align="center"><a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html">1</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=2">...</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=5">5</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=6">6</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=7">7</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=8">8</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=9">9</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=10">10</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=11">11</a> &nbsp; <font class="fs18">12</font> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=13">13</a> </div><table id="tabl1" class="tabl1"><tbody><tr><td><h2>TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU</h2>  
+<br>Phần này sẽ giới thiệu sơ lược về tối ưu hóa đa mục tiêu và một số giải thuật tiến hóa đa mục tiêu nổi bật nhất.
+<br><ol type="i"> <ol> <li> <h2>Tối ưu đa mục tiêu</h2> </li></ol> </ol> 
+<br>Không mất tính tổng quát, giả thuyết tất cả các mục tiêu của bài toán cần được tối thiểu hóa - một mục tiêu loại tối thiểu hóa có thể được chuyển thành loại tối đa hóa bằng cách nhân cho <i>-1</i>. Bài toán tối thiểu hóa <i>K</i> mục tiêu được định nghĩa như sau: cho 1 vectơ biến quyết định <i>n</i> chiều <i>x</i>={<i>x</i><sub><i>1</i></sub>,…,<i>x</i><sub><i>n</i></sub>} trong không gian giải pháp <i>X</i>, tìm vectơ <i>x*</i> mà nó tối thiểu tập <i>K</i> hàm mục tiêu đã cho <i>z</i>(<i>x*</i>)={<i>z</i><sub><i>1</i></sub>(<i>x*</i>),…,<i>z</i><sub><i>K</i></sub>(<i>x*</i>)}. Không gian lời giải <i>X</i> nói chung bị hạn chế bởi một loạt các ràng buộc có dạng <i>g</i><sub><i>j</i></sub>(<i>x*</i>)=<i>b</i><sub><i>j</i></sub> (<i>j</i>=<i>1</i>,…,<i>m</i>).
+<p>Một lời giải khả thi (feasible solution) <i>x</i> được gọi là <i>vượt trội</i> (dominate) lời giải <i>y</i> (x  y), nếu và chỉ nếu, <i>z</i><sub><i>i</i></sub>(<i>x</i>) ≤ <i>z</i><sub><i>i</i></sub>(<i>y</i>) (<i>i</i>=<i>1</i>,…, <i>K</i>) và <i>z</i><sub><i>j</i></sub>(<i>x</i>) &lt; <i>z</i><sub><i>j</i></sub>(<i>y</i>) ở ít nhất một mục tiêu <i>j</i>. Một lời giải được nói là <i>tối ưu Pareto</i> (Pareto optimal) nếu nó không bị vượt trội bởi một lời giải nào trong không gian lời giải. Tập tất cả các lời giải khả thi không bị vượt trội trong <i>X</i> được gọi là <i>tập tối ưu Pareto</i> (Pareto optimal set). Với tập tối ưu Pareto đã cho, các giá trị hàm mục tiêu tương ứng trong không gian mục tiêu được gọi là <i>Pareto Front</i>. </p>
+
+<p>Mục tiêu của các giải thuật tối ưu đa mục tiêu là xác định các lời giải trong tập tối ưu Pareto. Thực tế, việc chứng minh một lời giải là tối ưu thường không khả thi về mặt tính toán. Vì vậy, một tiếp cận thực tế với bài toán tối ưu đa mục tiêu là tìm kiếm tập các lời giải là thể hiện tốt nhất có thể của tập tối ưu Pareto, một tập các lời giải như vậy được gọi là <i>tập Pareto được biết tốt nhất </i>(Best-known Pareto set).
+</p>
+<p>Với mối bận tâm nêu trên, cách tiếp cận tối ưu hóa đa mục tiêu cần thực hiện tốt ba tiêu chí mâu thuẫn nhau sau đây:</p>
+
+<br><ol> <li> 
+<br>Tập Pareto-được-biết-tốt-nhất nên là một tập con của tập Pareto tối ưu.
+<br></li><li> 
+<br>Những lời giải trong tập Pareto-được-biết-tốt-nhất nên phân bố đều và đa dạng trên Pareto front để cung cấp cho người ra quyết định một hình ảnh về sự đánh đổi qua lại giữa các mục tiêu.
+<br></li><li> 
+<br>Pareto front-được-biết-tốt-nhất phải biểu thị toàn cảnh của Pareto front.
+<br></li></ol> 
+<br>Với thời gian tính toán có giới hạn cho trước, tiêu chí thứ nhất được thực hiện tốt nhất bằng cách tập trung (tăng cường) sự tìm kiếm trên một vùng đặc biệt của Pareto front. Trái lại, tiêu chí thứ hai đòi hỏi quá trình tìm kiếm phải phân bố đều trên Pareto front. Tiêu chí thứ ba nhắm vào việc mở rộng Pareto front tại hai đầu nhằm thăm dò những lời giải cực trị.
+<br><ol type="i"> <ol start="2"> <li> <h2>Các giải thuật tiến hóa đa mục tiêu</h2> </li></ol> </ol> 
+<br>Giải thuật di truyền hay giải thuật tiến hóa là họ giải thuật tìm kiếm dựa trên quần thể. Giải thuật tiến hóa đặc biệt phù hợp để giải quyết các bài toán tối ưu đa mục tiêu. Các giải thuật tiến hóa truyền thống có thể được biến cải để tìm kiếm tập Pareto-được-biết-tốt-nhất trong bài toán tối ưu đa mục tiêu chỉ trong một lượt chạy. Do đó, giải thuật tiến hóa là cách tiếp cận meta-heuristic được ưa chuộng nhất để giải bài toán tối ưu hóa đa mục tiêu. Trong số các phương pháp tối ưu hóa đa mục tiêu dựa vào <a href="http://hocday.com/ngy-nay-internet--lm-thay-i-hot-ng-qun-l-cng-ty-trc-y-qun-l-tp.html">meta-heuristic</a>, 70% các phương pháp là dựa vào giải thuật di truyền ([23]).
+<p>Giải thuật MOEA đầu tiên được biết là Vector Evaluated Genetic Algorithm (VEGA) được đề nghị bởi Schaffer, 1985 [9]. Sau đó, nhiều MOEA khác đã được phát triển bao gồm Multi-objective Genetic Algorithm (MOGA) bởi Fonseca và Fleming, năm 1993 [10], Niched Pareto Genetic Algorithm (NPGA) bởi Horn và các cộng sự, năm 1994 [11], Weight-Based Genetic Algorithm (WBGA) bởi Hajela và Lin, năm 1992 [12], Random Weight Genetic Algorithm (RWGA) bởi Murata và Ishibuchi, năm 1995 [13], Nondominated Sorting Genetic Algorithm (NSGA) bởi Srinivas và Deb, năm 1994 [14], Strength Pareto Evolutionary Algorithm (SPEA) bởi Zitzler và Thiele năm 1999 [15], SPEA cải tiến (SPEA2) bởi Zitzler và các cộng sự năm 2001 [16], Pareto-Archived Evolution Strategy (PAES) bởi Knowles và Corne năm 2000 [17], Pareto Enveloped-based Selection Algorithm (PESA) bởi Corne và các cộng sự năm 2000 [18], Region-based Selection in Evolutionary Multiobjective Optimization (PESA-II) bởi Corne và các cộng sự năm 2001 [19], Fast Non-dominated Sorting Genetic Algorithm (NSGA-II) bởi Deb và các cộng sự năm 2002 [20], Rank-Density Based Genetic Algorithm (RDGA) bởi Lu và Yen năm 2003 [21] và Dynamic Multi-Objective Evolutionary Algorithm (DMOEA) Yen và Lu năm 2003 [22].</p>
+
+<p>Điểm khác biệt giữa các giải thuật MOEA nằm ở cách gán độ thích nghi (fitness assignment), cách duy trì quần thể ưu tú (elitism) và các tiếp cận nhằm đa dạng hóa quần thể ([23]). 
+</p>
+<p>Một phương pháp hay dùng để gán độ thích nghi là <i>xếp hạng Pareto</i> (Pareto ranking) được mô tả sau đây.</p>
+
+<br><h3> Xếp hạng Pareto</h3> 
+<br>Phương pháp này bao gồm việc gán thứ hạng 1 cho các cá thể không bị vượt trội trong quần thể và đưa chúng ra ngoài vòng xem xét; rồi tìm tập cá thể không bị vượt trội mới để gán thứ hạng 2 và tiếp tục như vậy.
+<p>Một phương pháp hay dùng để đa dạng hóa quần thể là <i>chia sẻ độ thích nghi</i> (fitness sharing). Phương pháp chia sẻ độ thích nghi khuyến khích tìm kiếm trên những vùng chưa được thăm dò của Pareto front bằng cách giảm bớt độ thích nghi của các lời giải ở những vùng cá thể mật độ cao. Kỹ thuật chia sẻ độ thích nghi với <i>số đếm vùng lân cận</i> (niche count) được mô tả như sau.</p>
+
+<br><h3> Chia sẻ độ thích nghi dựa vào số đếm vùng lân cận.</h3> 
+<br>Phương pháp này đòi hỏi phải giảm bớt độ thích nghi <i>f</i><sub><i>i</i></sub> của một cá thể <i>i</i> bằng cách chia nó cho số đếm vùng lân cận <i>m</i><sub><i>i</i></sub><i> </i>được tính cho cá thể đó. Tức là độ thích nghi dùng chung được tính bằng <i>f</i><sub><i>i</i></sub>/<i>m</i><sub><i>i</i></sub>. Số đếm vùng lân cận <i>m</i><sub><i>i</i></sub> là giá trị ước lượng vùng lân cận của cá thể <i>i</i> đông đúc như thế nào. Nó được tính cho từng cá thể trong quần thể hiện hành theo công thức: <i>m</i><sub><i>i</i></sub> = <sub><i>j</i></sub><sub><i></i></sub><sub><i>Pop</i></sub> <i>Sh</i>[<i>d</i>[<i>i</i>, <i>j</i>]], với <i>d</i>[<i>i</i>, <i>j</i>] là khoảng cách Euclid giữa hai cá thể <i>i</i> và <i>j</i> và <i>Sh</i>[<i>d</i>] là hàm chia sẻ (sharing function). <i>Sh</i>[<i>d</i>] là một hàm của <i>d</i>[<i>i</i>, <i>j</i>] <a href="http://hocday.com/mu-sc-ca-sn-phm-ni-g.html">sao cho </a><i>Sh</i>[0] = 1 và <i>Sh</i>[<i>d</i>  <i></i><sub><i>share</i></sub>] = 0. Thông thường <i>Sh</i>[<i>d</i>] = <i>1</i>-<i>d</i>/<i></i><sub><i>share</i></sub> với d  <i></i><sub><i>share</i></sub> và <i>Sh</i>[<i>d</i>] = 0 với <i>d</i>  <i></i><sub><i>share</i></sub>. Ở đây <i></i><sub><i>share</i></sub> là <i>bán kính vùng lân cận</i>, được người dùng xác định để ước lượng độ cách biệt tối thiểu mong muốn giữa hai lời giải cuối cùng. Các cá thể có khoảng cách trong phạm vi <i></i><sub><i>share</i></sub> bị giảm bớt độ thích nghi vì chúng ở trong cùng vùng lân cận.
+<p>Một phương pháp đa dạng hóa quần thể khác không phải xác định thông số <i></i><sub><i>share</i></sub> là dùng <i>khoảng cách mật độ</i> (crowding distance) mà được mô tả sơ lược như sau.</p>
+
+<br><h3> Phương pháp dùng khoảng cách mật độ</h3> 
+<br>Phương pháp này đòi hỏi tính khoảng cách mật độ là giá trị ước lượng mật độ lời giải bao quanh một điểm được xét <i>i</i> trong quần thể. Đại lượng này là giá trị trung bình của hai điểm lấy hai bên của điểm được xét <i>i</i> dọc theo mỗi trục mục tiêu. Đại lượng này được dùng trong cơ chế chọn cha mẹ như sau: lấy ngẫu nhiên hai lời giải <i>x</i> và <i>y</i>; nếu chúng có cùng <i>mức không vượt trội</i> (non-domination rank) thì lời giải nào có khoảng cách mật độ cao hơn sẽ được chọn; ngược lại lời giải có mức không vượt trội thấp hơn sẽ được chọn.
+<p>Ngoài ra, việc duy trì quần thể ưu tú là một vấn đề quan trọng trong tối ưu hóa đa mục tiêu bằng giải thuật MOEA. Trong ngữ cảnh của giải thuật MOEA, tất cả những lời giải không bị vượt trội được phát hiện bởi MOEA được coi như là những <i>lời giải ưu tú</i>. Có hai chiến lược thường dùng để hiện thực việc duy trì quần thể ưu tú: (i) lưu trữ các lời giải ưu tú trong chính quần thể và (ii) lưu trữ các lời giải ưu tú trong một danh sách thứ cấp bên ngoài quần thể và đưa chúng trở lại quần thể.</p>
+
+<p>Đặc điểm của một số giải thuật MOEA tiêu biểu nhất được mô tả sơ lược như sau:
+</p>
+<p> <b>VEGA</b></p>
+
+<br>
+<br><i>Gán độ thích nghi</i>: quần thể được phân thành <i>K</i> tiểu quần thể (<i>K</i> là số mục tiêu). Các cá thể trong mỗi tiểu quần thể được đánh giá theo một mục tiêu riêng.
+<br>
+<br><i>Cơ chế đa dạng hóa</i>: không có.
+<br>
+<br><i>Cách duy trì quần thể ưu tú</i>: không có.
+<p> <b>MOGA</b></p>
+
+<br>
+<br><i>Gán độ thích nghi</i>: dùng cách xếp hạng Pareto (Pareto ranking). 
+<br>
+<br><i>Cơ chế đa dạng hóa</i>: chia sẻ độ thích nghi (fitness sharing) dùng số đếm vùng lân cận.
+<br>
+<br><i>Cách duy trì quần thể ưu tú</i>: không có.
+<p> <b>NSGA</b></p>
+
+<br>
+<br><i>Gán độ thích nghi</i>: xếp hạng dựa vào sắp thứ tự mức độ không vượt trội (non-domination sorting).
+<br>
+<br><i>Cơ chế đa dạng hóa</i>: chia sẻ độ thích nghi (fitness sharing) dùng số đếm vùng lân cận.
+<br>
+<br><i>Cách duy trì quần thể ưu tú</i>: không có.
+<p><b>NSGA-II</b></p>
+
+<br>
+<br><i>Gán độ thích nghi</i>: xếp hạng dựa vào sắp thứ tự mức độ không vượt trội (non-domination sorting).
+<br>
+<br><i>Cơ chế đa dạng hóa</i>: phương pháp dùng khoảng cách mật độ (crowding distance).
+<br>
+<br><i>Cách duy trì quần thể ưu tú</i>: có.
+<p> <b>SPEA</b></p>
+
+<br>
+<br><i>Gán độ thích nghi</i>: xếp hạng dựa vào kho lưu ngoài (external archive) của những lời giải không bị vượt trội.
+<br>
+<br><i>Cơ chế đa dạng hóa</i>: gom cụm (clustering) để tỉa bớt quần thể ngoài (external population).
+<br>
+<br><i>Cách duy trì quần thể ưu tú</i>: có.
+<p> <b>SPEA-2</b></p>
+
+<br>
+<br><i>Gán độ thích nghi</i>: dựa vào sức mạnh của các cá thể vượt trội (dominator).
+<br>
+<br><i>Cơ chế đa dạng hóa</i>: dùng mật độ dựa vào láng giềng gần nhất thứ <i>k</i>.
+<br>
+<br><i>Cách duy trì quần thể ưu tú</i>: có.
+<p>Độc giả có quan tâm đến các giải thuật MOEA tiêu biểu khác, có thể tham khảo bài tổng quan về MOEA khá đầy đủ của Konak và các cộng sự, 2006 ([23]).</p>
+
+<br><ol type="i" start="4"> <li> <h2>PHƯƠNG PHÁP GIẢI CHO BÀI TOÁN THIẾT KẾ TỐI ƯU MẠNG VIỄN THÔNG </h2> </li></ol> 
+<br>Một cách tổng quát, việc thiết kế mạng bao gồm việc tìm mô hình mạng và xác định lưu lượng cho các đường liên kết. Trong đó, mô hình mạng cần tìm phải liên thông và thỏa ràng buộc về bậc của nút; lưu lượng cho các đường liên kết phải bảo đảm có tổng lưu lượng cung cấp cho từng cặp nguồn - đích bằng với giá trị lưu lượng yêu cầu, cũng như thỏa các ràng buộc về độ trễ, dung lượng nút mạng, dung lượng liên kết và giới hạn số trạm trung gian. Theo hướng tiếp cận của nghiên cứu này, giải thuật tiến hóa có nhiệm vụ tìm mô hình mạng. Với mỗi <i>nhiễm sắc thể</i>, tức mô hình mạng đã tìm được, giải thuật Monte Carlo được sử dụng để xác định độ tin cậy và giải thuật qui hoạch tuyến tính được sử dụng để ấn định lưu lượng <i>tối ưu</i> cho các đường liên kết, từ đó tính ra được chi phí truyền tải của từng mô hình. Một giải thuật sửa chữa cũng được sử dụng với các mô hình mạng không đáp ứng được ràng buộc về độ trễ gói cực đại cho phép (<i>r11</i>).
+<br><ol type="i"> <ol> <li> <h2>Biểu diễn nhiễm sắc thể</h2> </li></ol> </ol> 
+<br>Một đồ thị bất kỳ có thể được biểu diễn duy nhất bằng một ma trận kề nút-nút. Các phần tử của ma trận nhận các giá trị trong khoảng [0, <i>t</i>] tương ứng với loại liên kết (=0 tương ứng với không có liên kết) giữa từng cặp nút hàng-cột. Vì các liên kết là hai chiều, nên chỉ cần xét phần tam giác trên của ma trận. Chọn một thứ tự đọc ma trận tùy ý (ở đây ta chọn đọc theo thứ tự từ trái sang phải, từ trên xuống dưới), ma trận có thể được chuyển thành vectơ mà không làm mất thông tin (xem Hình 1).
+<br><table dir="ltr" align="left" width="171" hspace="12" cellpadding="7" cellspacing="0"> <colgroup><col width="4"> <col width="5"> <col width="5"> <col width="5"> <col width="5"> <col width="5"> <col width="5"> <col width="5"> <col width="5"> </colgroup><tbody><tr valign="top"> <td width="4" height="4" bgcolor="#cccccc"> 
+<br><span></span>0
+<br></td> <td width="5"> 
+<br>3
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>2
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> </tr> <tr valign="top"> <td width="4" height="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5"> 
+<br>1
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>3
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> </tr> <tr valign="top"> <td width="4" height="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>4
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> </tr> <tr valign="top"> <td width="4" height="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>1
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> </tr> <tr valign="top"> <td width="4" height="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>2
+<br></td> <td width="5"> 
+<br>0
+<br></td> </tr> <tr valign="top"> <td width="4" height="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>3
+<br></td> </tr> <tr valign="top"> <td width="4" height="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> </tr> <tr valign="top"> <td width="4" height="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5"> 
+<br>0
+<br></td> </tr> <tr valign="top"> <td width="4" height="4" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> <td width="5" bgcolor="#cccccc"> 
+<br>0
+<br></td> </tr> </tbody></table>  
+<br>  
+<p>  
+<br></p>
+
+<br>  
+<br>
+<br>
+<br><b>302000001030000004000001000020003000</b>
+<br>
+<br><b>Hình 1.</b> Ví dụ biểu diễn của một nhiễm sắc thể (<i>t</i> = 4)
+<br>
+<br>Tổng quát, nếu <i>n</i> là số nút trong đồ thị, thì chiều dài nhiễn sắc thể là: <i>n</i>(<i>n</i>-1)/2 và không gian tìm kiếm của bài toán là: <img src="data:image/png;base64,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NHHixHHjxhlTGACnM378+KtXr6bazNvbe82aNZkyZdK/IgBInXThTHjrrbemT5/ep0+fVFsGBwcHBgaWKFHCgKoAOJezZ8+qfLfZt99+q/JVPgBgABnDmfDFF18cOXJk6dKlys1evXrVpUuXP//8k0/gAUgqOjq6c+fOqZ6AFz799NMePXoYUBIAqCRpOBPmzp176tSpY8eOKTc7dOjQuHHjxo4da0xVAJzCmDFj/v7771SbValS5fvvvzegHgBQT95w5uvru379+ho1aoSFhSm3DAoKatCgwdtvv21MYQAkt2/fvsmTJ6faLF++fKKT8fb2NqAkAFBP3nCWLv6FkL///nudOnXCw8MVmsXExLRp00YcJfv7+xtVGgBJ3b59u23btrGxscrNcuTIIbqXAgUKGFMVAKgndTgTypUrt2XLlvr16z9//lyh2Z07d1q1arV7924vLy/DagMgm1evXrVs2fLu3bvKzTJlyhQSElKmTBljqgIAm8gezoQaNWqsX7++efPmottVaPbXX3/16tVrwYIFhhUGQDY9evQ4fPiwchtfX99ff/21SpUqxpQEALZygnAm1K9f/6effmrXrl10dLRCs0WLFuXNm3fChAmGFQZAHsOHD0/1EW8vL681a9bUqVPHmJIAQAPnCGdCy5Yt169f37Zt28jISIVmQUFB/v7+X375pWGFAZDBjBkzgoODldtkzJhx3bp14mDPmJIAQBunCWdCs2bNtm/f3rx588ePHys069evn4+Pz2effWZYYQDMNXfu3MGDByu3yZkz55YtW7iaCUB+zhTO0sV/PGDv3r2NGjW6deuWtTZxcXE9e/aMjIzs27evkbUBMMX06dNTTWZvvPHGtm3bihcvbkxJAGAPJwtnQtmyZQ8cONCwYcNz584pNOvfv39ERMTIkSMNKwyA8cbGU25ToUKFkJAQXrUDwFk4XzgTChYseOjQoc6dO2/cuFGh2ejRo8+fPz9//nwfHx/DagNgjJcvX3br1m3lypXKzdq3by86AT8/P2OqAgD7OWU4Sxf/mqINGzYEBQWJBKbwtskVK1ZcuHDhl19+yZs3r5HlAdDV7du3P/zww6NHjyq08fT0nDJlSr9+/QyrCgAcwlnDWYKvvvqqSpUqHTp0ePTokbU2R44cqVSp0sKFC5s0aWJkbQB0snnz5m7dut27d0+hjb+//5o1a9555x3DqgIAR3HucCY0aNDg77//btOmjQhh1tqITrxZs2aff/751KlTfX19jSwPgANFRkYOHjx4zpw5ys3q1KmzcuVKbjID4KScPpyli/8E54EDB8aNGxcUFBQTE2Ot2ffff79jxw7RrdetW9fI8gA4xK5du3r37n3hwgWFNt7e3uPHjxcBzs3NzbDCAMCxXCGcCR4eHmPHjm3atGmnTp0uXrxorZno1uvVq9ehQ4dp06blyZPHyAoBaBYWFjZw4MBU7/0PCAhYsWJFuXLljKkKAHTiIuEsQbVq1Y4dOzZo0KB58+YpNPvpp582bdoUHh5uVF0A7FKyZMmIiAiFBm5ubgMGDAgKCvL29jasKgDQiUuFMyF9+vRz5sxp2bJl7969L1++bK2ZckcPQCrKP9jSpUvPnTu3Vq1ahtUDALpytXCWoH79+qdPn54wYcLUqVNfvXpldjkAdOHr6/vvf/976NChXl5eZtcCAA7jmuEsXXyvLcJZYGBgr1699u7da3Y5ABxMHIPNmTOnaNGiZhcCAA7msuEsQalSpXbv3r1kyZLhw4eHhYWZXQ4AB8iXL9+UKVPat29vdiEAoAsXD2cJunTp0qpVq8mTJ8+YMePFixdmlwNAowwZMgyJx+eYALiwNBHOhIwZM44fP753794jR45cunSpwhefAEjI3d29a9eu4lfMq2UBuLy0Es4S5MuXb+HChQMGDBBH3mbXAkCtBg0aTJ06NSAgwOxCAMAIaSucJShXrtzWrVvNrgKAWvxgAaQpaTGcAQAASItwBgAAIBHCGQAAgEQIZwAAABIhnAEAAEiEcAYAACARwhkAAIBECGcAAAASIZwBAABIhHAGAAAgEcIZAACARAhnAAAAEiGcAQAASIRwBgAAIBHCGQAAgEQIZwAAABIhnAEAAEiEcAYAACARwhkAAIBECGcAAAASIZwBAABIhHAGAAAgEcIZAACARAhnAAAAEiGcAQAASIRwBgAAIBHCGQAAgEQIZwAAABIhnAEAAEiEcAYAACARwhkAAIBECGcAAAASIZwBAABIhHAGAAAgEcIZAACARAhnAAAAEiGcAQAASIRwBgAAIJH/D2s3cojOw4EiAAAAAElFTkSuQmCC" name="Object31" align="absmiddle" width="84" height="35">
+<br><ol type="i"> <ol start="2"> <li> </li></ol></ol></td></tr></tbody></table><div align="center"><a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html">1</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=2">...</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=5">5</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=6">6</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=7">7</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=8">8</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=9">9</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=10">10</a> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=11">11</a> &nbsp; <font class="fs18">12</font> &nbsp; <a class="t4 fs20" href="http://hocday.com/ng-dng-gii-thut-tin-ha-a-mc-tiu-trong-thit-k-ti-u-kin-trc-mng.html?page=13">13</a> </div><div align="center"><script async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/f(2).txt"></script>
+<!-- end -->
+<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-9447527079377332" data-ad-slot="4414122202" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:280px;margin:0;padding:0;position:relative;visibility:visible;width:336px;background-color:transparent;"><iframe width="336" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0px;width:336px;height:280px;" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/saved_resource(2).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><br><noindex><hr><div align="center" style="font-size:12px;">Cơ sở dữ liệu được bảo vệ bởi bản quyền ©hocday.com 2016<br>
+<a rel="nofollow" href="http://hocday.com/?abuse=1">được sử dụng cho việc quản lý</a><br>
+
+<br>
+<script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='//counter.yadro.ru/hit?t14.1;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random()+
+"' alt='' border='0' width='88' height='31'><\/a>")
+//--></script><a href="http://www.liveinternet.ru/click" target="_blank"><img src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/hit" alt="" border="0" width="88" height="31"></a>
+</div></noindex></div></td>
+		<td><div style="right:0px;top:0px;"> &nbsp; &nbsp; <a href="http://hocday.com/">Quê hương</a><br><div class=" knopka"><a style="color:#222;" href="http://hocday.com/category/B%C3%81O_C%C3%81O/">BÁO CÁO</a></div><div class=" knopka"><a style="color:#222;" href="http://hocday.com/category/T%C3%A0i_li%E1%BB%87u/">Tài liệu</a></div><p style="margin-top:5px;"></p><script async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/f(2).txt"></script>
+<!-- adaptiv2 -->
+<ins class="adsbygoogle" style="display: block; height: 600px;" data-ad-client="ca-pub-9447527079377332" data-ad-slot="2937389009" data-ad-format="auto" data-adsbygoogle-status="done"><ins id="aswift_2_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:230px;background-color:transparent;"><ins id="aswift_2_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:230px;background-color:transparent;"><iframe width="230" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0px;width:230px;height:600px;" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/saved_resource(3).html"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></td>
+	</tr>
+</tbody></table><script type="text/javascript" charset="UTF-8" async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/pluso-like.js.tải xuống"></script><iframe id="google_osd_static_frame_7888179814459" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/saved_resource(4).html"></iframe><style type="text/css">.pluso{position:relative;z-index:1;display:inline-block;padding:0;-webkit-border-radius:22px;-moz-border-radius:22px;border-radius:22px;background:transparent;text-align:left;font-size:0;line-height:0;*display:inline;*zoom:1;}
+.pluso span{float:none;}
+.pluso-110010101001-14 a:active{ opacity:.6; }
+.pluso-110010101001-14 .pluso-wrap a{display:inline-block;vertical-align:inherit;margin:5px 0 0 5px;padding:0;width:40px;height:40px;background:url(http://share.pluso.ru/img/pluso-like/round/big/04.png) 0 0 transparent no-repeat;}
+.pluso-wrap{margin:0px !important;}
+.pluso-110010101001-14 .pluso-wrap{position:relative;z-index:1;display:inline-block;padding:0 5px 5px 0;-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;background:none;;text-align:left;font-size:0;line-height:0;*display:inline;*zoom:1;}
+.pluso-110010101001-14 a.pluso-more{width:40px;height:40px;background:url(http://share.pluso.ru/img/plus.png) 0 -60px no-repeat!important;position:relative;}
+.pluso-110010101001-14 .pluso-wrap > div{cursor:default;display:inline-block;text-decoration:none !important;color:white;}
+.pluso-110010101001-14 .pluso-wrap a{margin:0px;}
+.pluso-110010101001-14 .pluso-wrap div b{float:right;font-weight:normal;color:white;}
+.pluso-110010101001-14 .pluso-wrap > div{border-radius:6px;margin-right:4px;}
+.pluso-110010101001-14 .pluso-wrap a{width:40px;}
+.pluso-110010101001-14 .pluso-wrap div b{padding-left:5px;padding-right:10px;font-size:16px;line-height:40px;}
+.pluso-110010101001-14 a.pluso-more{margin-right:-22px;*left:5px;}
+.pluso-110010101001-14 .pluso-counter b{position:relative;padding:8px 12px;-webkit-border-radius: 22px;-moz-border-radius: 22px;border-radius: 122px;background:#eaeaeb;box-shadow:0 0 3px rgba(0,0,0,.3);color:#707070;white-space:nowrap;font:16px/40px Tahoma, Geneva, sans-serif!important;}
+.pluso-110010101001-14 .pluso-counter{position:relative;padding-right:28px;}
+.pluso-110010101001-14 .pluso-counter b{top:-14px;left:28px;}
+.pluso-110010101001-14 .pluso-counter b:after{position: absolute;top: 13px;left: -8px;z-index: 0;display: block;width: 0;border-width: 5px 9px 5px 0;border-style: solid;border-color: transparent #eaeaeb;content: '';}
+.pluso-110010101001-14 br{ display:none; }
+.pluso-box{position:absolute;border:4px solid #eaebea;width:310px;height:225px;overflow:hidden;z-index: 777;background:#f2f2f2;font:normal normal 12px/25px Tahoma, Geneva, sans-serif;box-shadow:0 4px 10px rgba(0, 0, 0, 0.4);text-align:left;-webkit-border-radius:14px;-moz-border-radius:14px;border-radius:14px;}
+.pluso-box a b{width:20px;height:20px;position:absolute;left:0;top:2px;}
+.pluso-box a:visited,.pluso-box a:hover,.pluso-box a{font:normal normal 12px/25px Tahoma, Geneva, sans-serif;color:#7f7f7f;text-decoration:none;white-space:nowrap;padding:0 0 0 25px;margin:0 0 0 5px;border:0;position:relative;width:115px;float:left;}
+.pluso-box .pluso-list{background:#ffffff;border-radius:14px;width:100%;height:200px;overflow:auto;position:absolute;left:0;top:25px;}
+.pluso-box a.pluso-logo{background:url(http://share.pluso.ru/img/pluso-like/logo-mini.png) 0 5px no-repeat;width:66px;height:19px;border:0;text-indent:-600em;padding:0 0 0 12px;margin:0 0 0 9px;}
+.pluso-box a.pluso-go{color:#4c4c4c;text-decoration:underline;padding-left:0;}
+.pluso-box a.pluso-close,.pluso-box a.pluso-close:hover,.pluso-box a.pluso-close:visited{float:right;width:20px;text-align:center;font-size:12px;line-height:20px;width:20px;margin:1px 1px 0 0;padding:0;font-weight:bold;color:#4c4c4c;text-decoration:none;background:#ffffff;border-radius:15px;border:1px solid #eaebea;}
+.pluso-box a.pluso-close:hover{background:#7f7f7f;color:#ffffff;border-color:transparent}
+.pluso-tip{cursor:pointer;position:absolute;padding:10px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;white-space:nowrap;font:bold 14px/12px Tahoma, Geneva, sans-serif!important;color:#fff;background:#f78d1d;background:-webkit-gradient(linear, left top, left bottom, from(#7ed263), to(#3d9530));background:-webkit-linear-gradient(top,#7ed263,#3d9530);background:-moz-linear-gradient(top,#7ed263,#3d9530);background:-ms-linear-gradient(top,#7ed263,#3d9530);background:-o-linear-gradient(top,#7ed263,#3d9530);background:linear-gradient(top,#7ed263,#3d9530);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7ed263, endColorstr=#3d9530);box-shadow:0 0 5px rgba(0,0,0,.5), inset 0 0 0px 1px rgba(0,0,0,.3)}
+.pluso-tip:after{position:absolute;z-index:0;display:block;width:0;height:0;border-style: solid;content:''}
+.pluso-tip.pluso-left-arrow:after{top:40%;right:-6px;border-color:transparent #447b36;border-width:6px 0px 6px 6px}
+.pluso-tip.pluso-top-arrow:after{bottom:-6px;border-color:#27601f transparent;border-width:6px 6px 0px 6px}
+.pluso-tip.pluso-bottom-arrow:after{top:-6px;border-color:#447b36 transparent;border-width:0px 6px 6px 6px}
+@keyframes pluso-market-animate{0% { opacity:1 } 50%{ opacity:.3} 100% { opacity:1}}
+@-webkit-keyframes pluso-market-animate{0% { opacity:1 } 50%{ opacity:.3} 100% { opacity:1}}
+.pluso-overlay-background{height:100%;width:100%;position:fixed;left:0;top:0;z-index:999999999;background-color: rgb(0, 0, 0);background-color: rgba(0, 0, 0, 0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";padding:0;margin:0;}
+.pluso-overlay-box{width:910px;margin: 50px auto 0;overflow:hidden;height:85%;background-color: #f5f5f5;border:1px solid #c4c4c4;padding:0!important;text-align:left;box-shadow:0 4px 12px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(255, 255, 255, 0.5) inset;border-radius:10px;}
+a.pluso-overlay-close,a.pluso-overlay-close:hover,a.pluso-overlay-close:visited{position:absolute;left:50%;margin:0 0 0 442px;top:38px;width:26px;height:26px;text-align:center;font:normal 20px/22px Arial;padding:0;color:#878787;text-decoration:none;background:#ffffff;border-radius:26px;border:2px solid #c4c4c4;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+a.pluso-overlay-close:hover{background:#7f7f7f;color:#ffffff;border-color:transparent}
+.pluso-overlay-box div{margin:20px 0 0 0;padding:0 0 12px 0;border-bottom:1px solid #c4c4c4;}
+.pluso-overlay-box ul{list-style:none;margin:10px 0 10px 0px;padding:0;height:85%;overflow:auto;}
+.pluso-overlay-box li{width:210px;height:260px;background:#ffffff;border-radius:10px;border:none;float:left;padding:0;margin:0 0px 10px 10px;}
+.pluso-overlay-box li a{display:block;text-decoration:none;margin:0;padding:0;height:100%;overflow:hidden;position:relative;}
+.pluso-overlay-box li a span, .pluso-overlay-box li a:hover span{position: relative;width: 190px;height:150px;border:1px solid #c4c4c4;overflow:hidden;margin:10px auto 5px auto;padding:0;text-align:center;display:block;}
+.pluso-overlay-box li a:hover span{box-shadow:0 0 5px #c4c4c4;-webkit-box-shadow:0 0 5px #c4c4c4;border:1px solid #c4c4c4}
+.pluso-overlay-box li a em{font:normal bold 15px/20px Arial;float:left;color:#e86340;padding:0px 0 0 10px;margin:0;}
+.pluso-overlay-box li a em u{font:normal normal 12px/12px Arial;text-decoration:none;display:block;color:#eb6338;padding:0;margin:0;}
+.pluso-overlay-box li a strong{font:normal 11px/14px Arial;display:block;padding:0 10px;color:#454545;position:relative;bottom:auto;height:42px;width:180px;overflow:hidden;margin:0 0 5px 0;border:0;}
+.pluso-overlay-box li a:hover strong{height:42px;overflow:auto;padding:0 10px;border:0;}
+.pluso-overlay-box li a b, .pluso-overlay-box li a b:hover, .pluso-overlay-box li a b:active{font:bold normal 15px/18px Arial, sans-serif;color: #ffffff;padding-top: 7px;padding-right: 12px;padding-bottom: 7px;padding-left: 12px;text-decoration: none;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-webkit-box-shadow: inset 0px -1px 2px rgba(255,255,255,.5);-moz-box-shadow: inset 0px -1px 2px rgba(255,255,255,.5);box-shadow: inset 0px -1px 2px rgba(255,255,255,.5);text-shadow: 0px 1px 2px #3d8a33;border:solid #4bb543 1px;background:-webkit-gradient(linear, 0 0, 0 100%, from(#95e488), to(#20a517));background: -moz-linear-gradient(top, #95e488, #20a517);background: -o-linear-gradient(top, #95e488, #20a517);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#95e488, endColorStr=#20a517);filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#95e488, endColorStr=#20a517);display:inline-block;float:right;bottom:auto;right:10px;position:relative;}
+.pluso-overlay-box li a b:hover{background:-webkit-gradient(linear, 0 0, 0 100%, from(#b1f4a3), to(#27c21c));background: -moz-linear-gradient(top, #b1f4a3, #27c21c);background:-o-linear-gradient(top, #b1f4a3, #27c21c);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#b1f4a3, endColorStr=#27c21c);filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#b1f4a3, endColorStr=#27c21c);}
+.pluso-overlay-box li a b:active{background:-webkit-gradient(linear, 0 0, 0 100%, from(#20a517), to(#95e488));background: -moz-linear-gradient(top, #20a517, #95e488);background:-o-linear-gradient(top, #20a517, #95e488);-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#20a517, endColorStr=#95e488);filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#20a517, endColorStr=#95e488);}
+.pluso-110010101001-14 .pluso-wrap a{ background-image:url(http://share.pluso.ru/img/pluso-like/square/big/14.png) }.pluso-110010101001-14 .pluso-wrap a.pluso-market-cart, .pluso-110010101001-14 .pluso-wrap a.pluso-market-cart-animate{ background:url(http://share.pluso.ru/img/pluso-like/square/big/market.png) -0px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-market-cart-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-110010101001-14 .pluso-wrap a.pluso-market-dollar, .pluso-110010101001-14 .pluso-wrap a.pluso-market-dollar-animate{ background:url(http://share.pluso.ru/img/pluso-like/square/big/market.png) -42px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-market-dollar-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-110010101001-14 .pluso-wrap a.pluso-market-bulb, .pluso-110010101001-14 .pluso-wrap a.pluso-market-bulb-animate{ background:url(http://share.pluso.ru/img/pluso-like/square/big/market.png) -84px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-market-bulb-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-110010101001-14 .pluso-wrap a.pluso-market-quest, .pluso-110010101001-14 .pluso-wrap a.pluso-market-quest-animate{ background:url(http://share.pluso.ru/img/pluso-like/square/big/market.png) -126px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-market-quest-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-110010101001-14 .pluso-wrap a.pluso-market-tag, .pluso-110010101001-14 .pluso-wrap a.pluso-market-tag-animate{ background:url(http://share.pluso.ru/img/pluso-like/square/big/market.png) -168px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-market-tag-animate{animation: pluso-market-animate 3s linear infinite alternate;-webkit-animation: pluso-market-animate 3s linear infinite alternate;}.pluso-box a b{ background-image:url(http://share.pluso.ru/img/pluso-like/round/small/04.png) }.pluso-box a.pluso-market b{ background:url(http://share.pluso.ru/img/pluso-like/round/small/market.png) -21px 0}.pluso-box a.pluso-vkontakte b{ background-position: -84px 0}.pluso-box a.pluso-odnoklassniki b{ background-position: -63px 0}.pluso-box a.pluso-facebook b{ background-position: -0px 0}.pluso-box a.pluso-twitter b{ background-position: -21px 0}.pluso-box a.pluso-google b{ background-position: -126px 0}.pluso-box a.pluso-moimir b{ background-position: -147px 0}.pluso-box a.pluso-pinterest b{ background-position: -105px 0}.pluso-box a.pluso-livejournal b{ background-position: -168px 0}.pluso-box a.pluso-tumblr b{ background-position: -42px 0}.pluso-box a.pluso-liveinternet b{ background-position: -189px 0}.pluso-box a.pluso-springpad b{ background-position: -210px 0}.pluso-box a.pluso-stumbleupon b{ background-position: -231px 0}.pluso-box a.pluso-myspace b{ background-position: -252px 0}.pluso-box a.pluso-formspring b{ background-position: -273px 0}.pluso-box a.pluso-blogger b{ background-position: -294px 0}.pluso-box a.pluso-digg b{ background-position: -315px 0}.pluso-box a.pluso-surfingbird b{ background-position: -336px 0}.pluso-box a.pluso-bobrdobr b{ background-position: -357px 0}.pluso-box a.pluso-readability b{ background-position: -378px 0}.pluso-box a.pluso-instapaper b{ background-position: -399px 0}.pluso-box a.pluso-evernote b{ background-position: -420px 0}.pluso-box a.pluso-delicious b{ background-position: -525px 0}.pluso-box a.pluso-vkrugu b{ background-position: -504px 0}.pluso-box a.pluso-pinme b{ background-position: -546px 0}.pluso-box a.pluso-yandex b{ background-position: -567px 0}.pluso-box a.pluso-yazakladki b{ background-position: -588px 0}.pluso-box a.pluso-moikrug b{ background-position: -609px 0}.pluso-box a.pluso-googlebookmark b{ background-position: -630px 0}.pluso-box a.pluso-yahoo b{ background-position: -651px 0}.pluso-box a.pluso-moemesto b{ background-position: -672px 0}.pluso-box a.pluso-memori b{ background-position: -693px 0}.pluso-box a.pluso-juick b{ background-position: -735px 0}.pluso-box a.pluso-linkedin b{ background-position: -756px 0}.pluso-box a.pluso-webdiscover b{ background-position: -798px 0}.pluso-box a.pluso-bookmark b{ background-position: -441px 0}.pluso-box a.pluso-email b{ background-position: -462px 0}.pluso-box a.pluso-print b{ background-position: -483px 0}.pluso-box a.pluso-webmoney b{ background-position: -924px 0}.pluso-box a.pluso-misterwong b{ background-position: -903px 0}.pluso-box a.pluso-friendfeed b{ background-position: -882px 0}.pluso-box a.pluso-market b{ background-position: --21px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-vkontakte{ background-position: -168px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-odnoklassniki{ background-position: -126px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-facebook{ background-position: -0px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-moimir{ background-position: -294px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-twitter{ background-position: -42px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-google{ background-position: -252px 0}.pluso-110010101001-14 .pluso-wrap a.pluso-print{ background-position: -966px 0}</style><script type="text/javascript" charset="UTF-8" async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/process"></script><script type="text/javascript" charset="UTF-8" async="" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/process(1)"></script></body><iframe id="google_shimpl" style="display: none;" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/saved_resource(5).html"></iframe><iframe id="google_esf" name="google_esf" src="./TỐI ƯU ĐA MỤC TIÊU VÀ CÁC GIẢI THUẬT TIẾN HÓA ĐA MỤC TIÊU - Ứng dụng giải thuật tiến hóa đa mục tiêu trong thiết..._files/zrt_lookup.html" data-ad-client="ca-pub-9447527079377332" style="display: none;"></iframe></html>
